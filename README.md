@@ -9,7 +9,7 @@ public Persona(String nombre, Integer edad, Boolean tieneLicencia,
 
 Fíjese también en cómo se crean los conjuntos y la lista. `Set.of`y `List.of` son métodos de factoría que crean objetos inmutables de tipo conjunto y tipo lista, respectivamente.
 
-1 ¿Juan tiene más de 18 años?
+1. ¿Juan tiene más de 18 años?
 1. ¿Maria tiene licencia de conducir?
 1. ¿Juan ha visitado Chile?
 1. ¿A María le gustan el cine y la música?
