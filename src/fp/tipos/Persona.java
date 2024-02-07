@@ -1,5 +1,7 @@
 package fp.tipos;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
@@ -18,9 +20,9 @@ public class Persona {
         this.nombre = nombre;
         this.edad = edad;
         this.tieneLicencia = tieneLicencia;
-        this.hobbies = hobbies;
-        this.paisesVisitados = paisesVisitados;
-        this.librosLeidos = librosLeidos;
+        this.hobbies = new HashSet<>(hobbies);
+        this.paisesVisitados = new HashSet<>(paisesVisitados);
+        this.librosLeidos = new ArrayList<>(librosLeidos);
     }
 
     public String getNombre() {
@@ -39,17 +41,17 @@ public class Persona {
 
 
     public Set<String> getHobbies() {
-        return hobbies;
+        return new HashSet<>(hobbies);
     }
 
 
     public Set<String> getPaisesVisitados() {
-        return paisesVisitados;
+        return new HashSet<>(paisesVisitados);
     }
 
 
     public List<String> getLibrosLeidos() {
-        return librosLeidos;
+        return new ArrayList<>(librosLeidos);
     }
 
 	@Override
